@@ -1,0 +1,293 @@
+/*###########Defaults###############*/
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    background-image: linear-gradient(darkgray,lightblue);
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+*{
+    box-sizing: border-box;
+}
+footer,
+#about,
+#skills,
+#professions{
+    margin-top:20px;
+}
+#home{
+    background-color:#E4E4E4;
+}
+#about{
+    background-color:black;
+    color:white;
+}
+#skills{
+    background-image: url(https://img.freepik.com/premium-photo/business-concept-skills-education-learning-personal-development-competency-business-concept_524876-2443.jpg?w=826);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#professions{
+    background-image:url(https://img.freepik.com/free-photo/skyscraper-view-city-leader-window-frame_1134-1034.jpg?w=996&t=st=1673666181~exp=1673666781~hmac=98e9b032207a0dbbf684ccf05e815d3a649e7f6c6e5adc4740f2e3dcecc90fcc);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+/*########################## Spinner #####################*/
+.spinWrap{
+    position:fixed;
+    height:100%;
+    width:100%;
+    z-index: 9999;
+    justify-content: center;
+    background-color:whitesmoke;
+   align-items: center;
+    top:0;
+    left:0;
+    display:flex;
+    font-size:140%;
+    transition: all 0.2s:
+}
+.spinWrapper{
+    display:none;
+}
+loader{
+    font-size:150%;
+}
+.spinSpan{
+    color:red;
+}
+/*################# Navbar ##############################*/
+
+.navbar {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 5px;
+    box-shadow: 0 0 5px white;
+    transition: all 0.4s ease;
+}
+.navbar a{
+    padding:10px;
+    margin-right:5px;
+}
+.navbar a:hover{
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px white;
+}
+.navbar li.active{
+    transform:scale(1.1);
+    align-items: center;
+}
+.navSpan1{
+    color:wheat;
+}
+.navSpan2{
+    color:aqua;
+}
+/*########################### Home #######################*/
+.homeCard{
+    margin:auto;
+    display:block;
+    padding-bottom:10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px black;
+}
+
+h1.jumbo{
+    padding-top:50px;
+    padding-bottom:20px;
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom:0px;
+}
+.card-body{
+    text-align:center;
+}
+
+.home-p{
+    font-size:150%;
+    text-align: center;
+    padding:10px;
+}
+
+/*######################### About ##########################*/
+
+.h2-jumbo{
+    text-align:center;
+    padding:15px;
+}
+
+.h3-col{
+    text-align:center;
+}
+
+.colmarg{
+    margin:10px;
+}
+.carkalaDark{
+    color:black;
+    font-weight:600;
+}
+.carkalaLight{
+    color:white;
+    font-weight:600;
+}
+
+.carimg{
+    height:5%
+}
+
+.carfam{
+    margin-top:10px;
+}
+.hob{
+    Font-size:150%
+}
+.fa-guitar{
+    margin:2px;
+}
+.hobList{
+    list-style: none
+}
+
+/*######################## Skills ###########################*/
+.h2-jumbo{
+    text-align:center;
+    padding:15px;
+}
+.colpad{
+    padding:10px;
+    border-radius:10px;
+}
+.cardFloat{
+    box-shadow: 2px 2px 5px black;
+}
+.p-jumbo{
+    font-size: 150%;
+    color:whitesmoke;
+}
+/*##################### Professions ##########################*/
+.h2-jumbo{
+    text-align:center;
+    padding:15px;
+}
+.box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:500px;
+}
+.coolCard{
+    background-color:black;
+    width:350px;
+    min-width:300px;
+    height:465px;
+    padding:20px 35px;
+    margin:15px;
+    border-radius:20px;
+    overflow: hidden;
+    text-align: center;
+}
+.coolCard i{
+    font-size:50px;
+    display:block;
+    margin:25px 0px;
+    color:aqua;
+}
+.profName{
+    color:whitesmoke;
+    margin-bottom:15px;
+    font-size:23px;
+}
+.parag{
+    line-height: 30px;
+    color:wheat;
+    margin-bottom: 35px;
+}
+.profButton{
+    padding: 6px 12px;
+    text-align: center;
+    border-style: solid;
+    border-radius:0.25rem;
+    border-width: 4px;
+}
+.profButton2{
+    padding: 6px 12px;
+    text-align: center;
+    border-style: solid;
+    border-radius:0.25rem;
+    border-width: 4px;
+}
+.profButton:hover{
+    color:whitesmoke;
+    background:transparent;
+}
+.profButton2:hover{
+    color:darkseagreen;
+    background:transparent;
+}
+.btn1{
+    color:#212529;
+    background-color: #f8f9fa;
+    border-color:#f8f9fa;
+}
+.btn2{
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color:whitesmoke;
+}
+.btn3{
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color:whitesmoke;
+}
+.btn4{
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color:whitesmoke;
+}
+.redSpan{
+    color:red;
+    font-size:120%;
+    text-transform: uppercase;
+}
+.butA{
+    text-decoration: none;
+    color:whitesmoke;
+}
+.modal-title{
+    color:cadetblue
+}
+
+/*######################### Footer ###########################*/
+
+footer{
+    background-color:cadetblue;
+    height:200px;
+    width:100%;
+    color:wheat;
+    text-align: center;
+}
+.footerH{
+    display:block;
+    padding-top:50px;
+}
+footer a{
+    text-decoration: none;
+    color:wheat;
+    font-size:200%;
+    padding:5px;
+    transition: all 0.5s;
+}
+footer a:hover{
+    color:wheat;
+    font-size:250%;
+}

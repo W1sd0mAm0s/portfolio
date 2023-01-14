@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--    js links-->
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="icon" type="image/x=icon" href="favicon/w-rounded-favicon-16x16.png">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+<!--################## Load Spinner #####################-->
+<div class="spinWrap" id="spinWrap">
+  <span class="sr-only">Loading...</span>
+    
+    <div>
+        <p class="loader"><b>The Page Is <span class="typing2 spinSpan"></span></b>
+        </p>
+    </div>
+</div>
+<!--###################Navbar###################-->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark max-width" id="navbar">
+       <a class="navbar-brand" href="index.html"><span class="navSpan1">Portfo</span><span class="navSpan2">lio</span></a>
+  <button class="navbar-toggler" onclick="changeActive()"
+          type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active" id="listHome">
+        <a class="nav-link" onclick="homeButton()" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" id="listAbout">
+        <a class="nav-link" href="#about" onclick="aboutButton()">About</a>
+      </li>
+      <li class="nav-item" id="listSkills">
+        <a class="nav-link" href="#skills" onclick="skillsButton()">Skills</a>
+      </li>
+      <li class="nav-item" id="listProfessions">
+        <a class="nav-link" href="#professions" onclick="professionsButton()">Professions</a>
+    </ul>
+  </div>
+</nav>
+<!--######################## Home Card ################-->
+<div id="home">  
+    <br>
+<div class="container-fluid homeMarg">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="jumbo">Welcome to My Portfolio</h1>
+            </div>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                
+            <div class="card homeCard" style="width:100%;">
+                <img src="images/me.jpg" class="card-img-top img-fluid" alt="My Family">
+                <div class="card-body">
+                    
+                    <p class="card-text card-p"><b> <span class="typing"></span></b></p>
+                 </div>
+                </div>
+            </div>
+              <div class="col">
+              </div>
+    </div>
+</div>
+</div>
+<!--##################About###################-->
+      
+<div id="about">
+    <br><br><br>
+    <div class="h2-jumbo">
+      <h2>About Me</h2>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+          <h3 class="h3-col">Family</h3>
+        <div class="colmarg">
+        <div class="row colmarg">
+            <div class="col-sm-12">
+                
+          <h4><i class="fa-solid fa-people-roof"></i> Nuclear Family</h4>
+          <p>I have a lovely family of two children and a beautiful wife. </p>
+            </div>
+        </div>
+             <div class="row colmarg">
+                 <div class="col-sm-12">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/fam.jpg" class="d-block w-100" alt="The Family">
+         <div class="carousel-caption d-none d-sm-block carkalaDark">
+        <p>My Family</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/me2.jpg" class="d-block w-100" alt="Me">
+         <div class="carousel-caption d-none d-sm-block carkalaLight">
+        <p>Me</p>
+      </div>
+    </div>
+      <div class="carousel-item">
+      <img src="images/wife3.jpg" class="d-block w-100" alt="My Wife">
+         <div class="carousel-caption d-none d-sm-block carkalaDark">
+        <p>My Wife</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/theDaughter.jpg" class="d-block w-100" alt="My Daughter">
+        <div class="carousel-caption d-none d-sm-block carkalaDark">
+        <p>My Daughter</p>
+      </div>
+    </div>
+      <div class="carousel-item">
+      <img src="images/theSon.jpg" class="d-block w-100" alt="My Son">
+        <div class="carousel-caption d-none d-sm-block carkalaLight">
+        <p>My Son</p>
+      </div>
+    </div>
+  </div>
+ <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+            </div>
+        </div>
+    </div>
+        <div class="row colmarg">
+            <div class="col-sm-12">
+           <h4><i class="fa-solid fa-people-group"></i> Extended Family</h4>
+          <p>I come from a family of five kids who were raised by both parents. Of the five of us, four are boys. Only three boys are married, leaving our lastborn and our only sister. <br>My father is a pastor and the General Overseer <b>(GO)</b> of <a href="https://www.facebook.com/BelieversFaithEmbassyWorldwide/">Beliver's Faith Embassy</a>. My mother works beside him.</p>
+            </div>
+          </div>
+          </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4">
+          <h3 class="h3-col">Hobbies</h3>
+          <div class="colmarg">
+          <div class="row colmarg">
+              <div class="col-sm-12">
+                  <div class="hob"><i class="fa-solid fa-guitar"></i>
+                  Music</div>
+                  <p>Making music is a talent I possess and a hobby I enjoy. You can always get cool music from me <a href="https://www.youtube.com/@wiseonemusic9672">here</a>.</p>
+              </div>
+              <div class="col-sm-12">
+                <div class="hob">
+                  <i class="fa-solid fa-gamepad"></i>
+                  Gaming
+                </div>
+                  <p> I also love playing Games on my free time. Some of the games I have enjoyed playing include:</p>
+                      <ul class="hobList">
+                        <li><i class="fa-regular fa-futbol"></i> Fifa</li>
+                        <li><i class="fa-solid fa-person-rifle"></i> PUBG</li>
+                        <li><i class="fa-solid fa-utensils"></i> Overcooked</li>
+                        <li><i class="fa-solid fa-user-tie"></i> Football Manager</li>
+                        <li><i class="fa-solid fa-fire"></i> Dead Cells</li>
+                      </ul>
+              </div>
+              <div class="col-sm-12">
+                <div class="hob">
+                  <i class="fa-solid fa-code"></i>
+                  Coding
+                </div>
+                  <p>
+                      I have developed a new hobby lately where I keep coding different websites and applications for fun. This <a href="index.html">portfolio</a> is a good example.
+                  </p>
+              </div>
+              <div class="col-sm-12">
+                <div class="hob">
+                  <i class="fa-solid fa-video"></i>
+                  Watching Movies
+                </div>
+                  <p>
+                      I am pretty sure that this hobby is common for many people. 
+                  </p>
+              </div>
+          </div>
+          </div>
+      </div>
+      <div class="col-md-12 col-lg-4">
+          <h3 class="h3-col">Philosophy</h3>
+           <div class="row colmarg">
+            <div class="col-sm-12">
+                <p>
+                  <q>My personal philosophy is rooted in the belief that kindness and professionalism are essential qualities for success in both personal and professional relationships. To me, treating others with kindness and respect is not only the right thing to do, but it also leads to better communication, collaboration, and ultimately, more successful outcomes.<br>
+                    
+                  As a website developer, I strive to stay current with the latest design trends and technologies, constantly pushing the boundaries of what is possible. My ultimate goal is to develop websites that are not only functional and user-friendly, but also visually stunning and innovative, pushing the boundaries of what is currently possible and setting new standards for the industry.<br>
+                      
+                  In addition to my technical skills, I also place a high value on professionalism in all of my interactions and deliverables. I believe that clear and effective communication, attention to detail, and a strong work ethic are essential for delivering high-quality results and building long-term relationships with clients. I am also committed sharing my knowledge and experience with others through mentoring, speaking engagements, and writing.</q>
+                </p>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+<!--######################### Skills ########################-->
+<div id="skills">
+    <br><br><br>
+    <div class="container-fluid">
+        <div class="h2-jumbo"><h2><b>Skills</b></h2></div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-12">
+              <div class="p-jumbo"> I am a highly skillful person who never stops learning. I am not tied to any particular industry. However, most of the skills that I have listed are complementary and aid in improving my professional life.  am always searching for something new to learn, meaning this section will be revised every now and again.
+          </div>
+        </div>
+        </div>
+      <div class="row">
+          <div class="col-sm-12 col-lg-4">
+              <div class="colpad">
+                  <div class="card cardFloat" style="width: 25rem;">
+                  <img src="images/computerskills.jpg" class="card-img-top img-sec" alt="Computer Skills Image">
+                  <div class="card-body">
+                      <h4 class="card-text">Computer Skills</h4>
+                        <p class="card-text">I have a good understanding of Microsoft office.
+                      I am also a good typist and to add to that I am a good HTML, CSS, Javascript coder</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="col-sm-12 col-lg-4">
+              <div class="colpad">
+             <div class="card cardFloat" style="width: 25rem;">
+              <img src="images/researchskills.jpg" class="card-img-top" alt="Research Skills Image">
+              <div class="card-body">
+                <h4 class="card-text">Research Skills</h4>
+                        <p class="card-text">I have more than half a decade's experience as a researcher. I enjoy researching in various topics. This is a skill needed in most of my professions (see <a href="#professions">professions</a>).</p>
+              </div>
+            </div>
+           </div>
+          </div>
+      </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-sm-12 col-lg-4">
+              <div class="colpad">
+             <div class="card cardFloat" style="width: 25rem;">
+              <img src="images/leadershipskills.jpg" class="card-img-top" alt="Leadership Skills Image">
+              <div class="card-body">
+                <h4 class="card-text">Leadership Skills</h4>
+                        <p class="card-text">I have served in leadership positions in numerous organizations and institutions. Through researc, I have studied the most effective leadership and management.</p>
+              </div>
+            </div>
+           </div>
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+        <div class="col-sm-12 col-lg-4">
+          <div class="colpad">
+           <div class="card cardFloat" style="width: 25rem;">
+              <img src="images/socialskills.jpg" class="card-img-top" alt="Social Skills Image">
+              <div class="card-body">
+                 <h4 class="card-text">Social Skills</h4>
+                        <p class="card-text">Generally, I am very good with people. By studying psychology, I am able to identify the best way to interact with different sets of people.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col"></div>
+          <div class="col-sm-12 col-lg-4">
+            <div class="colpad">
+             <div class="card cardFloat" style="width: 25rem;">
+              <img src="images/selfmanagement.jpg" class="card-img-top" alt="Self-Management Image">
+              <div class="card-body">
+                <h4 class="card-text">Self-Management Skills</h4>
+                        <p class="card-text">I have never failed to meet a deadline and I need no supervision whenever I am hired. People I've worked with have made good comments on this.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!--###################### Professions ######################-->
+      <div id="professions">
+    <br><br>
+    <div class="container-fluid">
+    <div class="h2-jumbo"><h2><b>Professions</b></h2></div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="box">
+                    <div class="coolCard">
+                        <i class="fa-solid fa-pen-clip"></i>
+                        <h3 class="profName">Writer</h3>
+                        <div class="parag">
+                         <p>I have worked as a fleerance online writer for more than 7 years. I am an expert in both academic and article writing. Basically, I can do anything in this line of work. </p>
+                            <div>
+                                <button class="profButton btn1" type="button" data-toggle="modal" data-target="#modal1">Hire Me</button>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+               </div>
+            <div class="col-sm-12 col-md-6 col-lg-3" id="transcriber">
+              <div class="box">
+                    <div class="coolCard">
+                        <i class="fa-solid fa-file-audio"></i>
+                        <h3 class="profName">Transcriber</h3>
+                        <div class="parag">
+                         <p>I have worked with various companies as a fleerance transcriber for more than 4 years. I am proficient in both verbatim and non-verbatim transcripts. </p>
+                            <div>
+                                <button class="profButton btn2" type="button" data-toggle="modal" data-target="#modal2">Hire Me</button>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3" id="webdeveloper">
+              <div class="box">
+                    <div class="coolCard">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3 class="profName">Web Developer</h3>
+                        <div class="parag">
+                         <p>I am a new web developer but not a newbie. I am perfect in front-end coding as showcased in this website. I am stil learning back-end coding and web designing. </p>
+                           <div>
+                                <button class="profButton btn3" type="button" data-toggle="modal" data-target="#modal3">Hire Me</button>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3" id="trainer">
+              <div class="box">
+                    <div class="coolCard">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                        <h3 class="profName">Trainer</h3>
+                        <div class="parag">
+                         <p>In all the professions that I have listed in this sections, I have the capacity to train a novice into becoming a master. Learning this skills will better your finances.
+                         </p>
+                            <div>
+                                <button class="profButton btn4" type="button" data-toggle="modal" data-target="#modal4">Hire Me</button>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+            </div>
+        </div>
+      </div>
+<!--######### Professions Modals ##########-->
+<div class="modal fade" id="modal1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Confirmation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          Please confirm that you want to send Wisdom a whatsapp message stating:<br><q>Hello, Wisdom. I would like to hire you as a Writer.</q><br><br><span class="redSpan"><b>Note</b></span> that you will redirected to whatsapp.com.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="profButton2 btn1" data-dismiss="modal">Decline</button>
+          <a class="butA" href="https://api.whatsapp.com/send?phone=245714372077&text=Hello,%20Wisdom.%20I%20would%20like%20to%20hire%20you%20as%20a%20Writer." target="_blank"><button type="button" class="profButton2 btn-primary">Confirm</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Confirmation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Please confirm that you want to send Wisdom a whatsapp message stating:<br><q>Hello, Wisdom. I would like to hire you as a Transcriber.</q><br><br><span class="redSpan"><b>Note</b></span> that you will redirected to whatsapp.com.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="profButton2 btn2" data-dismiss="modal">Decline</button>
+        <a class="butA" href="https://api.whatsapp.com/send?phone=245714372077&text=Hello,%20Wisdom.%20I%20would%20like%20to%20hire%20you%20as%20a%20Transcriber." target="_blank"><button type="button" class="profButton2 btn-primary">Confirm</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Confirmation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Please confirm that you want to send Wisdom a whatsapp message stating:<br><q>Hello, Wisdom. I would like to hire you as a Web Developer.</q><br><br><span class="redSpan"><b>Note</b></span> that you will redirected to whatsapp.com.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="profButton2 btn3" data-dismiss="modal">Decline</button>
+        <a class="butA" href="https://api.whatsapp.com/send?phone=245714372077&text=Hello,%20Wisdom.%20I%20would%20like%20to%20hire%20you%20as%20a%20Web%20Developer." target="_blank"><button type="button" class="profButton2 btn-primary">Confirm</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal4" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Confirmation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Please confirm that you want to send Wisdom a whatsapp message stating:<br><q>Hello, Wisdom. I would like to hire you as a Trainer.</q><br><br><span class="redSpan"><b>Note</b></span> that you will redirected to whatsapp.com.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="profButton2 btn4" data-dismiss="modal">Decline</button>
+        <a class="butA" href="https://api.whatsapp.com/send?phone=245714372077&text=Hello,%20Wisdom.%20I%20would%20like%20to%20hire%20you%20as%20a%20Trainer." target="_blank"><button type="button" class="profButton2 btn-primary">Confirm</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--###################### Footer ########################-->
+<footer>
+   <h1 class="footerH">Contact Me</h1>
+    <a href="mailto:wisdomamos05@gmail.com"><i class="fa-solid fa-at"></i></a>
+    <a href="https://www.facebook.com/orengowisdom" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/wise_one_wisdom/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@_wiseone1?_t=8Z1CsUCQgJJ&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="https://www.youtube.com/@wiseonemusic9672" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=245714372077" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+</footer>
+
+<!--#################### My JavaScripts ##################-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3acfaff73f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript/portfolio.js"></script>
+    </body>
+</html>
